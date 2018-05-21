@@ -12,10 +12,11 @@ class FlippingAnImage {
         
         for(int row = 0; row < B.length; row++){
             for(int col=0; col < B[row].length; col++){
-                if(B[row][col] == 0)
+                B[row][col] = B[row][col] ^ 1;
+                /*if(B[row][col] == 0)
                     B[row][col] = 1;
                 else
-                    B[row][col] = 0;
+                    B[row][col] = 0;*/
             }
         }
         return B;
